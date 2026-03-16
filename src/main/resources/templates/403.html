@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Không có quyền truy cập</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5 d-flex justify-content-center">
+<div class="text-center border p-5 shadow-sm rounded bg-light" style="max-width: 600px;">
+    <h1 class="display-1 fw-bold text-danger">403</h1>
+    <h2 class="mb-3">Truy cập bị từ chối!</h2>
+    <p class="text-muted fs-5 mb-4">
+        Xin lỗi, tài khoản của bạn chỉ có quyền xem. Bạn không có quyền thực hiện các chức năng Thêm, Sửa, hoặc Xóa sản phẩm.
+    </p>
+    <a th:href="@{/products}" class="btn btn-primary px-4">Quay lại danh sách</a>
+</div>
+</body>
+</html>
